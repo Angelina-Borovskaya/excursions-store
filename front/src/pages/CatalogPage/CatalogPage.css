@@ -1,0 +1,57 @@
+.catalog-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 180px;
+  padding-top: 140px;
+}
+
+.layout-catalog {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* ПРАВАЯ ЧАСТЬ */
+.content-catalog {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* СЕТКА КАРТОЧЕК */
+.catalog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* НЕТ РЕЗУЛЬТАТОВ */
+.no-results {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #444C5C;
+  opacity: 0.7;
+  text-align: center;
+}
+
+/* ===== АДАПТИВ ===== */
+
+@media (max-width: 1200px) {
+  .catalog-wrapper {
+    padding: 40px 60px;
+  }
+
+  .layout-catalog {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog-wrapper {
+    padding: 20px;
+  }
+
+  .catalog-grid {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,116 @@
+.excursion-card {
+  width: 320px;
+  background: #FBECDB;
+  border: 1px solid rgba(192, 177, 147, 0.35);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.excursion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.excursion-card__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.excursion-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.excursion-card__favorite {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+
+.excursion-card__favorite img {
+  width: 28px;
+  height: 28px;
+}
+
+.excursion-card__favorite:hover {
+  color: #FBECDB;
+  opacity: 0.35;
+}
+
+.excursion-card__body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #444C5C;
+}
+
+.excursion-card__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.excursion-card__location {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+.excursion-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.excursion-card__price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.excursion-card__rating {
+  font-size: 14px;
+}
+
+
+.excursion-card__button {
+  margin-top: 12px;
+  padding: 10px 0;
+  background: #444C5C;
+  color: #FBECDB;
+  border: none;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.excursion-card__button:hover {
+  opacity: 0.85;
+}
+
+.excursion-card__button--added {
+  background: #4CAF50;
+  cursor: default;
+}
+
+.excursion-card__button--added:hover {
+  opacity: 1;
+}

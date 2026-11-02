@@ -1,0 +1,106 @@
+.review-modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.review-modal {
+  background: #FBECDB;
+  width: 100%;
+  max-width: 560px;
+  padding: 40px;
+  border-radius: 12px;
+  position: relative;
+  color: #444C5C;
+}
+
+.review-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #444C5C;
+}
+
+.review-modal__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.review-modal__subtitle {
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* RATING */
+
+.review-form__rating {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 8px;
+}
+
+.star {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #C0B193;
+}
+
+.star.active {
+  color: #444C5C;
+}
+
+/* TEXT */
+
+.review-form__textarea {
+  min-height: 120px;
+  resize: vertical;
+  padding: 16px;
+  font-size: 16px;
+  background: #F6F2EA;
+  border: none;
+  color: #444C5C;
+}
+
+/* SUBMIT */
+
+.review-form__submit {
+  align-self: flex-end;
+  padding: 14px 32px;
+  background: transparent;
+  border: 1px solid #444C5C;
+  color: #444C5C;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.review-form__submit:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.review-form__submit:hover:not(:disabled) {
+  background: #444C5C;
+  color: #FBECDB;
+}

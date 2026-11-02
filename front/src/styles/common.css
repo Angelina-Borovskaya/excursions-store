@@ -1,0 +1,16 @@
+body {
+  font-family: 'Playfair Display', sans-serif;
+  background-color: #FBECDB;
+  color: #c0b193;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 90px 180px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #c0b19359;
+}

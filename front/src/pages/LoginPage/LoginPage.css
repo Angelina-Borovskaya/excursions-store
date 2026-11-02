@@ -1,0 +1,72 @@
+.auth-page {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #EDE6D8;
+}
+
+.register-link {
+  color: #444C5C;
+  text-decoration: none;
+}
+
+.register-link:hover {
+    opacity: 0.35;
+}
+
+.auth-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #444C5C;
+}
+
+.auth-subtitle {
+  font-size: 18px;
+  color: #444C5C;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.auth-form input {
+  height: 64px;
+  padding: 0 20px;
+  font-size: 18px;
+  border: none;
+  background: #F6F2EA;
+  color: #444C5C;
+}
+
+.auth-form input::placeholder {
+  color: #9AA0A6;
+}
+
+.auth-btn {
+  margin-top: 20px;
+  align-self: center;
+  padding: 14px 40px;
+  font-size: 18px;
+  background: transparent;
+  border: 1px solid #444C5C;
+  color: #444C5C;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  background: #444C5C;
+  color: #FBECDB;
+}
+
+.auth-policy {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.8;
+}

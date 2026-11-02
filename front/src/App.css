@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-height: 80px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+  font-family: 'Source Serif Pro', serif;
+  line-height: 1.6;
+  color: #C0B193;
+  background: #FBECDB;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background: #FBECDB;
+}
+
+.main-content {
+  padding-top: var(--header-height);
+  flex: 1;
+  background: #FBECDB;
+}
+
+
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 180px;
+  background: #FBECDB;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}

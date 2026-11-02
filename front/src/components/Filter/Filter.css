@@ -1,0 +1,124 @@
+.filter-sidebar {
+  width: 320px;
+  padding: 24px;
+  background: rgba(251, 236, 219, 0.6);
+  border: 1px solid rgba(192, 177, 147, 0.35);
+  font-family: "Playfair Display", serif;
+  flex-shrink: 0;
+}
+
+.filter-block {
+  margin-bottom: 40px;
+}
+
+.filter-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #444C5C;
+  margin-bottom: 20px;
+}
+
+.filter-box.column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.filter-box.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  color: #444C5C;
+  cursor: pointer;
+}
+
+.filter-option input {
+  width: 22px;
+  height: 22px;
+  appearance: none;
+  border: 1px solid rgba(192, 177, 147, 0.6);
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.filter-option input:checked {
+  background: rgba(192, 177, 147, 0.35);
+}
+
+.filter-text {
+  user-select: none;
+}
+
+.filter-stars {
+  color: #C0B193;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.tag-btn {
+  padding: 6px 14px;
+  background: rgba(192, 177, 147, 0.08);
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  color: #444C5C;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-btn:hover {
+  background: rgba(192, 177, 147, 0.15);
+}
+
+.tag-btn.active {
+  background: rgba(192, 177, 147, 0.25);
+  border-color: rgba(192, 177, 147, 0.5);
+}
+
+@media (max-width: 1200px) {
+  .filter-sidebar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.filter-header-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #444C5C;
+}
+
+.filter-reset {
+  background: transparent;
+  border: 1px solid rgba(192, 177, 147, 0.5);
+  color: #444C5C;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-reset:hover {
+  background: rgba(192, 177, 147, 0.2);
+}
+
+.filter-reset:active {
+  transform: translateY(1px);
+}
